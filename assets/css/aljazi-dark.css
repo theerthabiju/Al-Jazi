@@ -1,24 +1,24 @@
 :root {
-  --aljasi-text: #7D8081;
-  --aljasi-text-rgb: 125, 128, 129;
-  --aljasi-text-gray: #EFE6E1;
-  --aljasi-text-gray-rgb: 239, 230, 225;
-  --aljasi-base: #CA4445;
-  --aljasi-base-rgb: 202, 68, 69;
-  --aljasi-gray: #DCCEC6;
-  --aljasi-gray-rgb: 220, 206, 198;
-  --aljasi-black: #fff;
-  --aljasi-black-rgb: 255, 255, 255;
-  --aljasi-white: #171818;
-  --aljasi-white-rgb: 23, 24, 24;
-  --aljasi-secondary: #232728;
-  --aljasi-secondary-rgb: 35, 39, 40;
-  --aljasi-black2: #000;
-  --aljasi-black2-rgb: 0, 0, 0;
-  --aljasi-border-color: #F4F2EE;
-  --aljasi-border-color-rgb: 244, 242, 238;
-  --aljasi-letter-space: 0.1em;
-  --aljasi-letter-space-xl: 0.2em;
+  --aljazi-text: #7D8081;
+  --aljazi-text-rgb: 125, 128, 129;
+  --aljazi-text-gray: #EFE6E1;
+  --aljazi-text-gray-rgb: 239, 230, 225;
+  --aljazi-base: #CA4445;
+  --aljazi-base-rgb: 202, 68, 69;
+  --aljazi-gray: #DCCEC6;
+  --aljazi-gray-rgb: 220, 206, 198;
+  --aljazi-black: #fff;
+  --aljazi-black-rgb: 255, 255, 255;
+  --aljazi-white: #171818;
+  --aljazi-white-rgb: 23, 24, 24;
+  --aljazi-secondary: #232728;
+  --aljazi-secondary-rgb: 35, 39, 40;
+  --aljazi-black2: #000;
+  --aljazi-black2-rgb: 0, 0, 0;
+  --aljazi-border-color: #F4F2EE;
+  --aljazi-border-color-rgb: 244, 242, 238;
+  --aljazi-letter-space: 0.1em;
+  --aljazi-letter-space-xl: 0.2em;
 }
 
 .topbar-one__info__item i,
@@ -36,7 +36,7 @@
 .about-one__thumb__funfact__text,
 .service-card__content__title,
 .service-card:hover .service-card__icon,
-.aljasi-owl__carousel--basic-nav.owl-carousel .owl-nav button span:hover,
+.aljazi-owl__carousel--basic-nav.owl-carousel .owl-nav button span:hover,
 .funfact-one__item__title,
 .funfact-one__item__icon,
 .why-choose-two__feature__title,
@@ -57,11 +57,11 @@
 .testimonials-two .slick-button i:hover,
 .cta-one__content__btn:hover,
 .main-header__right__call:hover .main-header__right__icon {
-  color: var(--aljasi-black);
+  color: var(--aljazi-black);
 }
 
 .service-page--home .sec-title .sec-title__tagline, .service-page--home .sec-title .sec-title__title {
-  color: var(--aljasi-black) !important;
+  color: var(--aljazi-black) !important;
 }
 
 .main-header,
@@ -71,7 +71,7 @@
 .service-card__icon,
 .service-card--two .service-card__inner::after,
 .funfact-one__item::after {
-  background: var(--aljasi-secondary);
+  background: var(--aljazi-secondary);
 }
 
 .funfact-one__item__icon,
@@ -87,32 +87,32 @@
 .main-header__right__call::after,
 .main-slider-one__btn__link::before,
 .about-one__list__btn a::before,
-.aljasi-owl__carousel--basic-nav.owl-carousel .owl-nav button span,
+.aljazi-owl__carousel--basic-nav.owl-carousel .owl-nav button span,
 .galley-two__list__item__image__icon__item::after, .galley-two__list__item__image__icon__item::before,
 .cta-one__video__icon,
 .blog-card__content,
 .cta-one__inner::after,
 .testimonials-two .slick-button i {
-  background: var(--aljasi-black);
+  background: var(--aljazi-black);
 }
 
 .main-slider-one__carousel .owl-dots .owl-dot span::after {
-  background-color: rgba(var(--aljasi-black-rgb, 255, 255, 255), 0.4);
+  background-color: rgba(var(--aljazi-black-rgb, 255, 255, 255), 0.4);
 }
 
 .main-slider-one__carousel .owl-dots .owl-dot:hover span, .main-slider-one__carousel .owl-dots .owl-dot.active span {
-  background: var(--aljasi-black);
+  background: var(--aljazi-black);
 }
 
 .main-header__right__number,
 .home-showcase .demo-one__title,
 .about-one__list__btn a,
 .blog-card__title {
-  color: var(--aljasi-white);
+  color: var(--aljazi-white);
 }
 
 .demo-one__btns {
-  background-color: rgba(var(--aljasi-white-rgb, 23, 24, 24), 0.7);
+  background-color: rgba(var(--aljazi-white-rgb, 23, 24, 24), 0.7);
 }
 
 .about-one__feature {
@@ -120,17 +120,17 @@
 }
 
 .about-one__thumb__funfact {
-  border-top: 4px solid var(--aljasi-black, #fff);
-  border-left: 4px solid var(--aljasi-black, #fff);
-  border-right: 4px solid var(--aljasi-black, #fff);
+  border-top: 4px solid var(--aljazi-black, #fff);
+  border-left: 4px solid var(--aljazi-black, #fff);
+  border-right: 4px solid var(--aljazi-black, #fff);
 }
 
 .main-menu .main-menu__list > li > a {
-  color: var(--aljasi-gray);
+  color: var(--aljazi-gray);
 }
 
 .client-carousel__title {
-  color: var(--aljasi-text);
+  color: var(--aljazi-text);
 }
 
 .feature-one__item {
@@ -138,11 +138,11 @@
 }
 
 .feature-one__item__icon {
-  color: var(--aljasi-base);
+  color: var(--aljazi-base);
 }
 
 .galley-two__list__item__image__icon {
-  background: rgba(var(--aljasi-black-rgb, 255, 255, 255), 0.2);
+  background: rgba(var(--aljazi-black-rgb, 255, 255, 255), 0.2);
 }
 
 .client-carousel {

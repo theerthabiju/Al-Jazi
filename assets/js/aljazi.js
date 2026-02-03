@@ -31,8 +31,8 @@
   }
 
   // Date Picker
-  if ($(".aljasi-datepicker").length) {
-    $(".aljasi-datepicker").each(function () {
+  if ($(".aljazi-datepicker").length) {
+    $(".aljazi-datepicker").each(function () {
       $(this).datepicker();
     });
   }
@@ -368,8 +368,8 @@
   }
 
   //accrodion
-  if ($(".aljasi-accrodion").length) {
-    var accrodionGrp = $(".aljasi-accrodion");
+  if ($(".aljazi-accrodion").length) {
+    var accrodionGrp = $(".aljazi-accrodion");
     accrodionGrp.each(function () {
       var accrodionName = $(this).data("grp-name");
       var Self = $(this);
@@ -382,10 +382,10 @@
           .find(".accrodion-title")
           .on("click", function () {
             if ($(this).parent().hasClass("active") === false) {
-              $(".aljasi-accrodion." + accrodionName)
+              $(".aljazi-accrodion." + accrodionName)
                 .find(".accrodion")
                 .removeClass("active");
-              $(".aljasi-accrodion." + accrodionName)
+              $(".aljazi-accrodion." + accrodionName)
                 .find(".accrodion")
                 .find(".accrodion-content")
                 .slideUp();
@@ -467,9 +467,9 @@
 
   function thmOwlInit() {
     // owl slider
-    let aljasiowlCarousel = $(".aljasi-owl__carousel");
-    if (aljasiowlCarousel.length) {
-      aljasiowlCarousel.each(function () {
+    let aljaziowlCarousel = $(".aljazi-owl__carousel");
+    if (aljaziowlCarousel.length) {
+      aljaziowlCarousel.each(function () {
         let elm = $(this);
         let options = elm.data("owl-options");
         let thmOwlCarousel = elm.owlCarousel(
@@ -480,9 +480,9 @@
         });
       });
     }
-    let aljasiowlCarouselNav = $(".aljasi-owl__carousel--custom-nav");
-    if (aljasiowlCarouselNav.length) {
-      aljasiowlCarouselNav.each(function () {
+    let aljaziowlCarouselNav = $(".aljazi-owl__carousel--custom-nav");
+    if (aljaziowlCarouselNav.length) {
+      aljaziowlCarouselNav.each(function () {
         let elm = $(this);
         let owlNavPrev = elm.data("owl-nav-prev");
         let owlNavNext = elm.data("owl-nav-next");
@@ -497,19 +497,19 @@
         });
       });
     }
-    let aljasiowlCarouselCustomDots = $(".aljasi-owl__carousel--custom-dots");
-    if (aljasiowlCarouselCustomDots.length) {
-      aljasiowlCarouselCustomDots.each(function () {
+    let aljaziowlCarouselCustomDots = $(".aljazi-owl__carousel--custom-dots");
+    if (aljaziowlCarouselCustomDots.length) {
+      aljaziowlCarouselCustomDots.each(function () {
         let elm = $(this);
-        let aljasiowlCarouselThumb = elm.data("thumb-elm");
-        $(aljasiowlCarouselThumb).each(function () {
+        let aljaziowlCarouselThumb = elm.data("thumb-elm");
+        $(aljaziowlCarouselThumb).each(function () {
           let self = $(this);
           self.find(".owl-dot").on("click", function () {
             elm.trigger("to.owl.carousel", [$(this).index(), 300]);
           });
         });
         elm.on("changed.owl.carousel", function (element) {
-          $(aljasiowlCarouselThumb).each(function () {
+          $(aljaziowlCarouselThumb).each(function () {
             let self = $(this);
             self.find(".owl-dot").removeClass("active");
             self.find(".owl-dot").eq(element.item.index).addClass("active");
@@ -527,9 +527,9 @@
       let thmTinySlider = tns(tinyOptions);
     });
   }
-  function aljasiSlickInit() {
+  function aljaziSlickInit() {
     // slick slider
-    let hiredotsslickCarousel = $(".aljasi-slick__carousel");
+    let hiredotsslickCarousel = $(".aljazi-slick__carousel");
     if (hiredotsslickCarousel.length) {
       hiredotsslickCarousel.each(function () {
         let elm = $(this);
@@ -643,9 +643,9 @@
   stickyMenuUpScroll($(".sticky-header--normal"), "active");
 
   //Strech Column
-  function aljasi_stretch() {
+  function aljazi_stretch() {
     var i = $(window).width();
-    $(".row .aljasi-stretch-element-inside-column").each(function () {
+    $(".row .aljazi-stretch-element-inside-column").each(function () {
       var $this = $(this),
         row = $this.closest(".row"),
         cols = $this.closest('[class^="col-"]'),
@@ -674,9 +674,9 @@
       $this.css(styles);
     });
   }
-  aljasi_stretch();
+  aljazi_stretch();
 
-  function aljasi_cuved_circle() {
+  function aljazi_cuved_circle() {
     let circleTypeElm = $(".curved-circle--item");
     if (circleTypeElm.length) {
       circleTypeElm.each(function () {
@@ -720,7 +720,7 @@
     thmOwlInit();
     thmTinyInit();
     priceFilter();
-    aljasiSlickInit();
+    aljaziSlickInit();
 
     if ($(".circle-progress").length) {
       $(".circle-progress").appear(function () {
@@ -791,7 +791,7 @@
       });
     }
 
-    aljasi_cuved_circle();
+    aljazi_cuved_circle();
   });
 
   $(window).on("scroll", function () {
@@ -818,6 +818,6 @@
   });
 
   $(window).on("resize", function () {
-    aljasi_stretch();
+    aljazi_stretch();
   });
 })(jQuery);
